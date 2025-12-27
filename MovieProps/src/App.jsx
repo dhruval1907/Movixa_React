@@ -1,12 +1,20 @@
-import React from 'react'
-import Reg from './components/login/Reg'
+import { useState } from "react";
+import Reg from "./components/login/Reg";
+import Login from "./components/login/Login";
 
 const App = () => {
-  return (
-    <div>
-      <Reg/>
-    </div>
-  )
-}
+  const [isLogin, setIsLogin] = useState(false);
+  const [users, setUsers] = useState([]);
 
-export default App
+  return (
+    <>
+      {isLogin ? (
+        <Login users={users} setIsLogin={setIsLogin} />
+      ) : (
+        <Reg setUsers={setUsers} setIsLogin={setIsLogin} />
+      )}
+    </>
+  );
+};
+
+export default App;
