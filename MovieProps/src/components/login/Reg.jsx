@@ -10,11 +10,13 @@ const Reg = () => {
 
   const formHandler = (e) => {
     e.preventDefault();
+    if (!email || !password) return;
     setallData((prev) => [...prev, { email, password }]);
-    console.log(allData);
     setEmail("");
     setPassword("");
-    if (!email || !password) return;
+    setTimeout(() => {
+      alert("Registered ✅");
+    }, 1000);
   };
 
   return (
@@ -36,7 +38,8 @@ const Reg = () => {
             Get started to access discover new titles, and stay connected to
             what’s worth watching.
           </p>
-          <form noValidate 
+          <form
+            noValidate
             className="w-full"
             onSubmit={(e) => {
               formHandler(e);
@@ -54,17 +57,16 @@ const Reg = () => {
                 value={email}
                 required
                 className="w-[70%]  py-2 text-[10px] border-2 rounded-lg border-white  outline-none  caret-transparent"
-                />
+              />
             </div>
             <div className="w-full flex items-center justify-center gap-4">
               <FaUnlockAlt className="opacity-[0.4] text-sm " />
               <input
                 onChange={(e) => {
-                    //   console.log(e.target.value);
+                  //   console.log(e.target.value);
                   setPassword(e.target.value);
                 }}
                 value={password}
-                
                 type="text"
                 placeholder="   Password"
                 className="w-[70%]  py-2 text-[10px] border-2 rounded-lg border-white  outline-none  caret-transparent"
