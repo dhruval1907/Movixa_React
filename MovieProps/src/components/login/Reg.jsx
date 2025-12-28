@@ -20,7 +20,7 @@ const Reg = ({ setUsers, setIsLogin }) => {
     alert("Registered ✅");
     const user = {email,password}
     localStorage.setItem("user",JSON.stringify(user))
-    console.log(user);
+    // console.log(user);
     
   };
 
