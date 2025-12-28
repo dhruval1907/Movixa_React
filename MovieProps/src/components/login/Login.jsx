@@ -29,20 +29,20 @@ const Login = ({ users, setIsLogin }) => {
           "linear-gradient(to right,#9AD1EF,#DBEFF9,#E5EEF7,#FBFBFD)",
       }}
     >
-      <div className="h-[60%] w-[27%] bg-white/80 rounded-2xl shadow-2xl">
+      <div className="h-[80%] lg:h-[60%] md:h-[80%] bg-white/80 rounded-2xl shadow-2xl md:w-[50%] lg:w-[30%] w-[80%]">
         
      
         <div className="w-full flex items-center justify-center text-4xl h-[20%]">
-          <IoMdExit />
+          <IoMdExit  className="text-5xl"/>
         </div>
 
     
         <div className="text-center flex items-center flex-col gap-2">
-          <h1 className="text-base font-bold opacity-[0.9]">
+          <h1 className="text-2xl font-bold opacity-[0.9]">
             Login with email
           </h1>
 
-          <p className="text-[12px] w-[90%] text-center opacity-[0.6]">
+          <p className="text-[18px] w-[75%] text-center opacity-[0.6]">
             Continue exploring movies and stay connected to what’s worth
             watching.
           </p>
@@ -53,33 +53,33 @@ const Login = ({ users, setIsLogin }) => {
           >
            
             <div className="w-full flex items-center justify-center gap-4">
-              <IoIosMail className="opacity-[0.4]" />
+              <IoIosMail className="opacity-[0.4] text-3xl" />
               <input
                 type="text"
                 placeholder="   Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-[70%]   font-semibold py-2 text-[10px] border-2 rounded-lg border-white outline-none caret-transparent"
+                className="w-[70%]   font-semibold py-4 text-[18px] border-2 rounded-lg border-white outline-none caret-transparent  "
               />
             </div>
 
             <div className="w-full flex items-center justify-center gap-4 mt-3">
-              <FaUnlockAlt className="opacity-[0.4] text-sm" />
+              <FaUnlockAlt className="opacity-[0.4] text-3xl" />
               <input
                 type="password"
                 placeholder="   Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-[70%] font-semibold py-2 text-[10px] border-2 rounded-lg border-white outline-none caret-transparent"
+                className="w-[70%] font-semibold py-4 text-[18px] border-2 rounded-lg border-white outline-none caret-transparent"
               />
             </div>
 
-            <button className="bg-black text-white px-12 py-2 text-sm font-light rounded-3xl mt-5 active:scale-95">
+            <button type="submit" className="bg-black text-white px-20 py-2 text-2xl font-light rounded-3xl mt-15 active:scale-95">
               Login
             </button>
 
         
-            <p className="text-[11px] mt-4 opacity-70">
+            <p className="text-sm lg:text-2xl md:text-2xl  mt-4 opacity-70">
               Don’t have an account?{" "}
               <span
                 onClick={() => setIsLogin(false)}
