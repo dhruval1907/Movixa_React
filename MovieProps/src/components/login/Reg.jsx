@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { IoMdExit } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { FaUnlockAlt } from "react-icons/fa";
@@ -18,6 +18,10 @@ const Reg = ({ setUsers, setIsLogin }) => {
     setPassword("");
 
     alert("Registered ✅");
+    const user = {email,password}
+    localStorage.setItem("user",JSON.stringify(user))
+    console.log(user);
+    
   };
 
   return (
@@ -40,11 +44,7 @@ const Reg = ({ setUsers, setIsLogin }) => {
             worth watching.
           </p>
 
-          <form
-            className="w-full"
-            noValidate
-            onSubmit={formHandler}
-          >
+          <form className="w-full" noValidate onSubmit={formHandler}>
             <div className="w-full flex items-center justify-center gap-4">
               <IoIosMail className="opacity-[0.4] text-3xl" />
               <input
@@ -67,11 +67,14 @@ const Reg = ({ setUsers, setIsLogin }) => {
               />
             </div>
 
-            <button type="submit" className="bg-black text-white px-20 py-2 text-2xl rounded-3xl mt-15 active:scale-95">
+            <button
+              type="submit"
+              className="bg-black text-white px-20 py-2 text-2xl rounded-3xl font-light  mt-8 active:scale-95"
+            >
               Sign up
             </button>
 
-            <p className="text-sm lg:text-2xl md:text-2xl   mt-4 opacity-70">
+            <p className="text-sm lg:text-2xl md:text-2xl mt-4  opacity-70">
               Already have an account?{" "}
               <span
                 onClick={() => setIsLogin(true)}
