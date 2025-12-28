@@ -1,9 +1,10 @@
 import React from 'react'
+import Side from './side'
 
 const Hero = () => {
   return (
     <div>
-      <h1>Hero hai bhai</h1>
+      <Side/>
     </div>
   )
 }

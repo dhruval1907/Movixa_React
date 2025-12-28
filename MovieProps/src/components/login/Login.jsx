@@ -30,6 +30,8 @@ const Login = ({ users, setIsLogin }) => {
       localStorage.setItem("isLoggedIn", "true");
       setIsLogin(true);
     }
+    localStorage.setItem("isLogin", "true");
+    setIsLogin(true);
   };
 
   return (
