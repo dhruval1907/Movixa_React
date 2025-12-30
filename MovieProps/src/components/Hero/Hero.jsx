@@ -5,22 +5,31 @@ import Heromain from "./Heromain";
 const Hero = () => {
   return (
     <div
-      className="h-screen w-full p-7 "
-      style={{ backgroundColor:"black" }}
+      className="h-screen w-full p-7"
+      style={{ backgroundColor: "black" }}
     >
-      <div className="hero h-full w-full flex justify-evenly ">
+      <div className="h-full w-full flex justify-between gap-5">
+
+        {/* SIDEBAR */}
         <div
-          className="p-3 w-[24%] h-full rounded-2xl relative"
-          style={{ background: "linear-gradient(#241C2F,#0E0E0E,#37364B)" }}
+          className="p-3 w-[24%] h-full rounded-2xl"
+          style={{
+            background: "linear-gradient(#241C2F,#0E0E0E,#37364B)",
+          }}
         >
-        <Side />
+          <Side />
         </div>
+
+        {/* MAIN CONTENT */}
         <div
           className="w-[72%] h-full rounded-2xl"
-          style={{ background: "linear-gradient(#241C2F,#0E0E0E,#37364B)" }}
+          style={{
+            background: "linear-gradient(#241C2F,#0E0E0E,#37364B)",
+          }}
         >
           <Heromain />
         </div>
+
       </div>
     </div>
   );
