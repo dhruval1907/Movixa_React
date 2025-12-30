@@ -5,31 +5,31 @@ const Moviespart3 = () => {
   const movies = [
     {
       imgUrl:
-        "https://i.pinimg.com/1200x/ab/77/d2/ab77d2b713312df62e876018b9be0ea1.jpg",
+        "https://i.pinimg.com/736x/cf/40/44/cf40440f388ca20497316b1cf1f47b77.jpg",
       text: "batman never way home",
       isWatched: 80,
     },
     {
       imgUrl:
-        "https://i.pinimg.com/1200x/6c/00/a4/6c00a43d018340664c03707e001d1c80.jpg",
+        "https://i.pinimg.com/736x/d7/2e/f5/d72ef5bc3439323e40bb28a2b0d4ea1e.jpg",
       text: "The boys",
       isWatched: 40,
     },
     {
       imgUrl:
-        "https://i.pinimg.com/736x/c0/7d/ff/c07dffc972f59c8238ba47bbdb76afc9.jpg",
+        "https://i.pinimg.com/1200x/97/6c/9f/976c9f28572614f6975d1609f5590a28.jpg",
       text: "Jumanji ",
       isWatched: 20,
     },
     {
       imgUrl:
-        "https://i.pinimg.com/736x/0e/10/35/0e1035e4818ce2f47d09bea3bf95af41.jpg",
+        "https://i.pinimg.com/736x/b9/0f/ff/b90fffec08f5991e455b083953e75314.jpg",
       text: "batman never way ",
       isWatched: 60,
     },
     {
       imgUrl:
-        "https://i.pinimg.com/1200x/0f/59/49/0f59496b11746c54b937b5b2f98f7ac4.jpg",
+        "https://i.pinimg.com/736x/1e/73/11/1e73113cbc535ac9c99d3c5df4112103.jpg",
       text: "Avengers no",
       isWatched: 55,
     },
@@ -44,7 +44,7 @@ const Moviespart3 = () => {
   return (
     <div className="h-[30vh] w-full p-5  mt-6">
       <div className="flex justify-between items-center h-10">
-        <div className="text-white font-bold text-2xl">Tranding series </div>
+        <div className="text-white font-bold text-2xl">Top 10 series  </div>
         <button className="px-5 py-1 rounded-full text-white font-semibold bg-white/20">
           See all
         </button>
@@ -55,7 +55,7 @@ const Moviespart3 = () => {
           {movies.map(function (elem) {
             return (
               <div
-                className="h-[25vh] w-[250px] bg-red-200 rounded-2xl relative shrink-0 "
+                className="h-[20vh] w-[350px] bg-red-200 rounded-2xl relative shrink-0 "
                 id="movie"
               >
                 <div className="z-[1] h-full w-full rounded-2xl overflow-hidden absolute">

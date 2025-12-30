@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       className="h-screen w-full p-7 "
-      style={{ background: "linear-gradient(black,white)" }}
+      style={{ backgroundColor:"black" }}
     >
       <div className="hero h-full w-full flex justify-evenly ">
         <div
