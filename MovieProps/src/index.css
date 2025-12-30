@@ -4,3 +4,7 @@
 .main::-webkit-scrollbar{   
     display: none;
 }
+
+.movie::-webkit-scrollbar{   
+    display: none;
+}

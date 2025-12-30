@@ -1,7 +1,7 @@
 import React from "react";
 import Moviecard from "./Moviecard";
 
-const Moviespart2 = () => {
+const Moviespart3 = () => {
   const movies = [
     {
       imgUrl:
@@ -42,9 +42,9 @@ const Moviespart2 = () => {
   ];
 
   return (
-    <div className="h-[30vh] w-full p-5 ">
+    <div className="h-[30vh] w-full p-5  mt-6">
       <div className="flex justify-between items-center h-10">
-        <div className="text-white font-bold text-2xl">You might liked it</div>
+        <div className="text-white font-bold text-2xl">Tranding series </div>
         <button className="px-5 py-1 rounded-full text-white font-semibold bg-white/20">
           See all
         </button>
@@ -74,4 +74,4 @@ const Moviespart2 = () => {
   );
 };
 
-export default Moviespart2;
+export default Moviespart3;

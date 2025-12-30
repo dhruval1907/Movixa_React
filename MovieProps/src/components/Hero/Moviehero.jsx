@@ -13,7 +13,7 @@ const Moviehero = () => {
         />
 
         <div className="absolute h-full w-full z-[2] p-5 flex flex-col justify-between items-start ">
-          <button className="px-2 py-3 rounded-4xl text-white font-semibold  bg-red-200/20">
+          <button className="px-7 py-3 rounded-4xl text-white font-semibold  bg-red-200/20">
             🔥 Now trending
           </button>
           <div className="h-[60%] w-full">

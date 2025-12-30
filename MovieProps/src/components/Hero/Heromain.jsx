@@ -3,6 +3,7 @@ import Nav from './Nav'
 import Moviehero from './Moviehero'
 import MoviesPart1 from './Moviespart1'
 import MoviesPart2 from './Moviespart2'
+import Moviespart3 from './Moviespart3'
 
 const Heromain = () => {
   return (
@@ -12,6 +13,7 @@ const Heromain = () => {
         <Moviehero/>
         <MoviesPart1/>
         <MoviesPart2/>
+        <Moviespart3/>
       </div>
     </div>
   )
